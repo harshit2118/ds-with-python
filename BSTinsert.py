@@ -2,6 +2,7 @@ from BSTOperations import height
 from BSTOperations.traversals import inorder
 from BSTOperations.traversals import preorder
 from BSTOperations.traversals import postorder
+from BSTOperations import CL
 ##CLass for creating doubbly linklist
 #LEFT---DATA---RIGHT
 class Node:
@@ -44,3 +45,4 @@ preorder.Preorder(r)
 print("Printing in PostOrder")
 postorder.Postorder(r)
 print("Height of a given Tree is {}".format(height.Height(r)))
+print("Number of leaf nodes in a tree is {}".format(CL.CountLeaf(r)))
