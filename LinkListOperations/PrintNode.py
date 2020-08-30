@@ -1,4 +1,6 @@
 def PrintLL(node):
-    while node is not None:
-        print(node.data)
-        node.next=node
+    if node:
+      print(node.data)
+      if node.next is not None:
+        PrintLL(node.next)
+        
